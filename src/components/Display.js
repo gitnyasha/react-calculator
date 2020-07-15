@@ -6,7 +6,7 @@ const Display = (props) => {
 
   return (
     <div className='display'>
-      <p className='right-f'>
+      <p className='right-side'>
         {result}
       </p>
     </div>
