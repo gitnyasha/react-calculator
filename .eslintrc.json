@@ -26,6 +26,15 @@
   "rules": {
     "react/jsx-uses-vars": "error",
     "react/jsx-uses-react": "error",
-    "import/no-unresolved": 0
+    "import/no-unresolved": 0,
+    "react/jsx-filename-extension": [
+      "warn",
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ]
   }
 }
