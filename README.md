@@ -1,12 +1,12 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Calculator
 
 > A react calculator app
 
 ![Screenshot 2020-07-15 at 18 47 56](https://user-images.githubusercontent.com/45620987/87572457-dc01fd00-c6cb-11ea-9d92-6027c897f50e.png)
 
-Additional description about the project and its features.
+A basic calculator functionality.
 
 ## Built With
 
@@ -20,25 +20,22 @@ Additional description about the project and its features.
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+Code Editor
+React
+NodeJs
+
 ### Setup
+
+Download the repo from github or clone
 
 ### Install
 
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+npm install
 
 ## Authors
 
@@ -58,11 +55,6 @@ Feel free to check the [issues page](issues/).
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
