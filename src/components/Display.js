@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 export const Display = (props) => {
   const { result } = props;
 
-  return <div className="display">{result}</div>;
+  return <div>{result}</div>;
 };
 
 Display.propTypes = {
