@@ -4,7 +4,9 @@
     "es6": true,
     "jest": true
   },
-  "extends": ["airbnb-base"],
+  "extends": [
+    "airbnb-base"
+  ],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
@@ -17,5 +19,11 @@
       "modules": true
     }
   },
-  "rules": {}
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "react/jsx-uses-vars": "error",
+    "react/jsx-uses-react": "error"
+  }
 }
