@@ -5,7 +5,7 @@ import ButtonPanel from "./ButtonPanel";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <header className="App-header">
         <Display />
         <ButtonPanel />
