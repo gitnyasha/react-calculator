@@ -11,12 +11,6 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "extends": [
-    "plugin:react/recommended"
-  ],
-  "plugins": [
-    "react"
-  ],
   "rules": {
     "react/jsx-filename-extension": [
       "warn",
