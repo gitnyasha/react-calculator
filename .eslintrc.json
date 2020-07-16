@@ -6,7 +6,8 @@
   },
   "extends": [
     "airbnb-base",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
+    "eslint:recommended",
   ],
   "globals": {
     "Atomics": "readonly",
@@ -20,6 +21,9 @@
       "modules": true
     }
   },
+  "plugins": [
+    "react"
+  ],
   "rules": {
     "react/jsx-uses-vars": "error",
     "react/jsx-uses-react": "error",
