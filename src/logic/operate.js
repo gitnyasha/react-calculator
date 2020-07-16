@@ -2,17 +2,17 @@
 import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
+    const one = Big(numberOne);
+    const two = Big(numberTwo);
     switch (operation) {
         case '-':
-            return Big(numberOne) - Big(numberTwo);
+            return one.minus(two).valueOf();
         case '+':
-            return Big(numberOne) + Big(numberTwo);
+            return one.plus(two).valueOf();
         case '/':
-            return Big(numberOne) / Big(numberTwo);
-        case '%':
-            return Big(numberOne) % Big(numberTwo);
+            return one.div(two).valueOf();
         default:
-            return Big(numberOne) * Big(numberTwo);
+            return one.times(two).valueOf();
     }
 };
 export default operate;
