@@ -11,8 +11,6 @@ const operate = (numberOne, numberTwo, operation) => {
             return one.plus(two).valueOf();
         case '/':
             return one.div(two).valueOf();
-        case '%':
-            return one % two;
         default:
             return one.times(two).valueOf();
     }
