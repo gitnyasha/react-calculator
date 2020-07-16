@@ -7,7 +7,7 @@
   "extends": [
     "airbnb-base",
     "plugin:react/recommended",
-    "eslint:recommended",
+    "eslint:recommended"
   ],
   "globals": {
     "Atomics": "readonly",
