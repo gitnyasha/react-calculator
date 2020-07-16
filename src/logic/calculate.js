@@ -1,12 +1,33 @@
-import operate from './operate';
+const calculate = ({ total, next, operation }, buttonName) => {
+    const calculateObject = {
+        total,
+        next,
+        operation,
+    };
+    switch (buttonName) {
+        case 'AC':
+            calculateObject.total = '';
+            calculateObject.next = '';
+            calculateObject.operation = '';
+            break;
+        case '+/-':
+            calculateObject.total *= -1;
+            calculateObject.next *= -1;
+            break;
+        case '+':
+        case '-':
+        case 'x':
+        case '÷':
+        case '%':
+            calculateObject.operation = buttonName;
+            break;
+        case '=':
+            return total;
 
-const calculate = (calcObj, buttonName) => {
-    if (buttonName === '+/-') {
-        calcObj.total *= -1;
-        calcObj.next *= -1;
-    } else {
-        calcObj.total = operate(calcObj.total, calcObj.next, buttonName);
+        default:
+            return calculateObject;
     }
-    return calcObj;
+    return calculateObject;
 };
+
 export default calculate;
