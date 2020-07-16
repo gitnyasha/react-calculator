@@ -28,17 +28,8 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .buttonPanel {
-  width: 720px;
+  width: 700px;
   background-color: white;
 }
 
@@ -65,9 +56,11 @@ button:hover {
   height: 100px;
   background-color: grey;
   padding: 10px;
+  display: flex;
+  font-size: 40px;
 }
 
 .right-side {
-  float: right;
-  font-size: 40px;
+  width: 100%;
+  text-align: right;
 }
