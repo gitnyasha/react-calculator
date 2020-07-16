@@ -15,4 +15,5 @@ const operate = (numberOne, numberTwo, operation) => {
             return one.times(two).valueOf();
     }
 };
+
 export default operate;
