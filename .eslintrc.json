@@ -4,20 +4,28 @@
     "es6": true,
     "jest": true
   },
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 2018,
-    "sourceType": "module"
-  },
   "extends": [
     "plugin:react/recommended"
   ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    }
+  },
   "plugins": [
     "react"
   ],
   "rules": {
+    "react/jsx-uses-vars": "error",
+    "react/jsx-uses-react": "error",
+    "import/no-unresolved": 0,
     "react/jsx-filename-extension": [
       "warn",
       {
@@ -26,10 +34,6 @@
           ".jsx"
         ]
       }
-    ],
-    "import/no-unresolved": "off",
-    "no-shadow": "off",
-    "import/no-named-as-default": "off",
-    "import/extensions": "off"
+    ]
   }
 }
