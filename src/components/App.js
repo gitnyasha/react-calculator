@@ -36,37 +36,37 @@ class App extends React.Component {
   }
 
   handleClick(e) {
-    const content = e.target.textContent;
-    if (content === 'AC') {
+    const press = e.target.textContent;
+    if (press === 'AC') {
       this.clearAll();
-    } else if (content === '=') {
+    } else if (press === '=') {
       this.setState(prevState => (calculate(prevState, prevState.buttonName)));
       this.setState(prevState => ({ display: prevState.total }));
       this.clearAfterCalculation();
-    } else if (isNaN(Number(content))) {
+    } else if (isNaN(Number(press))) {
       this.setState({
-        operation: content,
-        buttonName: content,
+        operation: press,
+        buttonName: press,
       });
-      if (content === '+/-') {
+      if (press === '+/-') {
         this.setState(prevState => (calculate(prevState, prevState.buttonName)));
         this.setState(prevState => ({ display: prevState.total }));
       } else {
-        this.setState(prevState => ({ display: prevState.display + content }));
+        this.setState(prevState => ({ display: prevState.display + press }));
       }
     } else if (this.state.operation === null) {
       if (this.state.total === null) {
-        this.setState({ total: content });
+        this.setState({ total: press });
       } else {
-        this.setState(prevState => ({ total: prevState.total + content }));
+        this.setState(prevState => ({ total: prevState.total + press }));
       }
       this.setState(prevState => ({ display: prevState.total }));
     } else if (this.state.next === null) {
-      this.setState({ next: content });
-      this.setState(prevState => ({ display: prevState.display + content }));
+      this.setState({ next: press });
+      this.setState(prevState => ({ display: prevState.display + press }));
     } else {
-      this.setState(prevState => ({ next: prevState.next + content }));
-      this.setState(prevState => ({ display: prevState.display + content }));
+      this.setState(prevState => ({ next: prevState.next + press }));
+      this.setState(prevState => ({ display: prevState.display + press }));
     }
   }
 
