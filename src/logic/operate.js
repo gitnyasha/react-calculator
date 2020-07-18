@@ -1,4 +1,3 @@
-
 import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
@@ -10,9 +9,12 @@ const operate = (numberOne, numberTwo, operation) => {
         case '+':
             return one.plus(two).valueOf();
         case '/':
-            return one.div(two).valueOf();
+            return one / two;
+        case '%':
+            return one % two;
         default:
             return one.times(two).valueOf();
     }
 };
+
 export default operate;
