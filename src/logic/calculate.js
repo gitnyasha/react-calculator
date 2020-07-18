@@ -9,5 +9,4 @@ const calculate = (calcObj, buttonName) => {
     }
     return calcObj;
 };
-
 export default calculate;
